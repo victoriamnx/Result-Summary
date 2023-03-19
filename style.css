@@ -16,16 +16,23 @@ body {
   height: 100%;
   margin: 0;
   border: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-#box1 {
-  display: flex;
+.container {
+  height: 905px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+}
+
+.box1 {
+  display: grid;
+  justify-content: center;
+  grid-area: 1 / 2;
+  z-index: 1;
+  padding: 20px;
   background-image: linear-gradient(
     hsla(251, 99%, 63%, 1),
     hsla(242, 81%, 55%, 1)
@@ -34,7 +41,8 @@ body {
   box-shadow: rgba(22, 22, 24, 0.2) 0px 7px 29px 0px;
 }
 
-#box1 #title {
+.box1 #title {
+  text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: "Hanken Grotesk", sans-serif;
@@ -43,37 +51,7 @@ body {
   color: hsla(248, 97%, 85%, 1);
 }
 
-#box1 #result {
-  padding: 50px;
-  text-align: center;
-  font-family: "Hanken Grotesk", sans-serif;
-  color: hsl(0, 0%, 100%);
-  background-image: linear-gradient(
-    hsla(253, 70%, 47%, 1),
-    hsla(246, 82%, 56%, 1)
-  );
-  border-radius: 50%;
-}
-
-#box1 #result > h1:first-child {
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 80px;
-  text-align: center;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: 700;
-  color: hsl(0, 0%, 100%);
-}
-
-#box1 #result > h1:last-child {
-  text-align: center;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  color: hsla(248, 97%, 85%, 1);
-}
-
-#box1 #compliment {
+.box1 #compliments > h1:first-child {
   padding: 10px;
   text-align: center;
   font-family: "Hanken Grotesk", sans-serif;
@@ -82,7 +60,7 @@ body {
   color: hsl(0, 0%, 100%);
 }
 
-#box1 #text {
+.box1 #compliments > h1:last-child {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px;
@@ -93,24 +71,52 @@ body {
   color: hsla(248, 97%, 85%, 1);
 }
 
-#box2 {
-  padding: 30px;
-  display: flex;
+.box1 #result {
+  padding: 20px;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(
+    hsla(253, 70%, 47%, 1),
+    hsla(246, 82%, 56%, 1)
+  );
+  border-radius: 50%;
+}
+
+.box1 #result > h1:first-child {
+  font-size: 80px;
+  text-align: center;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+.box1 #result > h1:last-child {
+  text-align: center;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: hsla(248, 97%, 85%, 1);
+}
+
+.box2 {
+  grid-column-start: 3;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+  padding: 50px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 0px 30px 30px 0px;
   box-shadow: hsl(241, 100%, 89%) 0px 1px 0px, hsl(241, 100%, 89%) 0px 8px 24px,
     hsl(241, 100%, 89%) 0px 16px 48px;
 }
 
-#box2 #boxes {
+.box2 #boxes {
   padding-top: 20px;
   padding-bottom: 20px;
   justify-content: space-between;
 }
 
-#box2 #title {
+.box2 #title {
   text-align: left;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -120,18 +126,17 @@ body {
   color: hsl(224, 30%, 27%);
 }
 
-#box2 #react {
+.box2 #react {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-#box2 #boxes #reaction {
-  margin-bottom: 18px;
+.box2 #boxes #reaction {
   align-items: center;
   display: flex;
+  margin-bottom: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
-  text-align: left;
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 10px;
   font-weight: 700;
@@ -140,8 +145,9 @@ body {
   border-radius: 10px;
 }
 
-#box2 #boxes #reaction h2 {
-  margin-left: 30px;
+.box2 #boxes #reaction h2 {
+  text-align: right;
+  margin-left: 46px;
   margin-right: 5px;
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 20px;
@@ -149,7 +155,8 @@ body {
   color: hsl(224, 30%, 27%);
 }
 
-#box2 #boxes #reaction h3 {
+.box2 #boxes #reaction h3 {
+  text-align: right;
   margin-left: 5px;
   margin-right: 10px;
   text-align: left;
@@ -159,12 +166,12 @@ body {
   color: rgb(153, 153, 153);
 }
 
-#box2 #memo {
+.box2 #memo {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-#box2 #boxes #memory {
+.box2 #boxes #memory {
   margin-bottom: 18px;
   align-items: center;
   display: flex;
@@ -179,8 +186,9 @@ body {
   border-radius: 10px;
 }
 
-#box2 #boxes #memory h2 {
-  margin-left: 30px;
+.box2 #boxes #memory h2 {
+  text-align: right;
+  margin-left: 48px;
   margin-right: 5px;
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 20px;
@@ -188,7 +196,8 @@ body {
   color: hsl(224, 30%, 27%);
 }
 
-#box2 #boxes #memory h3 {
+.box2 #boxes #memory h3 {
+  text-align: right;
   margin-left: 5px;
   margin-right: 10px;
   text-align: left;
@@ -198,12 +207,12 @@ body {
   color: rgb(153, 153, 153);
 }
 
-#box2 #verb {
+.box2 #verb {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-#box2 #boxes #verbal {
+.box2 #boxes #verbal {
   margin-bottom: 18px;
   align-items: center;
   display: flex;
@@ -218,8 +227,9 @@ body {
   border-radius: 10px;
 }
 
-#box2 #boxes #verbal h2 {
-  margin-left: 30px;
+.box2 #boxes #verbal h2 {
+  text-align: right;
+  margin-left: 68px;
   margin-right: 5px;
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 20px;
@@ -227,7 +237,8 @@ body {
   color: hsl(224, 30%, 27%);
 }
 
-#box2 #boxes #verbal h3 {
+.box2 #boxes #verbal h3 {
+  text-align: right;
   margin-left: 5px;
   margin-right: 10px;
   text-align: left;
@@ -237,12 +248,12 @@ body {
   color: rgb(153, 153, 153);
 }
 
-#box2 #visu {
+.box2 #visu {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-#box2 #boxes #visual {
+.box2 #boxes #visual {
   margin-bottom: 18px;
   align-items: center;
   display: flex;
@@ -257,8 +268,9 @@ body {
   border-radius: 10px;
 }
 
-#box2 #boxes #visual h2 {
-  margin-left: 30px;
+.box2 #boxes #visual h2 {
+  text-align: right;
+  margin-left: 68px;
   margin-right: 5px;
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 20px;
@@ -266,7 +278,8 @@ body {
   color: hsl(224, 30%, 27%);
 }
 
-#box2 #boxes #visual h3 {
+.box2 #boxes #visual h3 {
+  text-align: right;
   margin-left: 5px;
   margin-right: 10px;
   text-align: left;
@@ -305,6 +318,7 @@ button:hover {
 }
 
 .attribution {
+  grid-column-start: span 4;
   font-family: "Hanken Grotesk", sans-serif;
   margin-top: 10px;
   font-size: 11px;
