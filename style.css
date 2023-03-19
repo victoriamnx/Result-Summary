@@ -8,7 +8,7 @@
 
 html,
 body {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
   font-weight: 400;
   color: hsl(0, 0%, 0%);
   background-color: hsl(0, 0%, 100%);
@@ -19,7 +19,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: center;
 }
 
 #box1 {
@@ -36,7 +35,7 @@ body {
 }
 
 #box1 #title {
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 30px;
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 20px;
@@ -48,14 +47,30 @@ body {
   padding: 50px;
   text-align: center;
   font-family: "Hanken Grotesk", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
   color: hsl(0, 0%, 100%);
   background-image: linear-gradient(
     hsla(253, 70%, 47%, 1),
     hsla(246, 82%, 56%, 1)
   );
   border-radius: 50%;
+}
+
+#box1 #result > h1:first-child {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 80px;
+  text-align: center;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+#box1 #result > h1:last-child {
+  text-align: center;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: hsla(248, 97%, 85%, 1);
 }
 
 #box1 #compliment {
@@ -79,32 +94,206 @@ body {
 }
 
 #box2 {
+  padding: 30px;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  background-color: hsl(221, 100%, 96%);
-  border-radius: 0px 10px 10px 0px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0px 30px 30px 0px;
   box-shadow: hsl(241, 100%, 89%) 0px 1px 0px, hsl(241, 100%, 89%) 0px 8px 24px,
     hsl(241, 100%, 89%) 0px 16px 48px;
-  object-fit: cover;
+}
+
+#box2 #boxes {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+
+#box2 #title {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: hsl(224, 30%, 27%);
+}
+
+#box2 #react {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#box2 #boxes #reaction {
+  margin-bottom: 18px;
+  align-items: center;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: hsl(0, 100%, 67%);
+  background-color: hsl(0, 53%, 94%);
+  border-radius: 10px;
+}
+
+#box2 #boxes #reaction h2 {
+  margin-left: 30px;
+  margin-right: 5px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+#box2 #boxes #reaction h3 {
+  margin-left: 5px;
+  margin-right: 10px;
+  text-align: left;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(153, 153, 153);
+}
+
+#box2 #memo {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#box2 #boxes #memory {
+  margin-bottom: 18px;
+  align-items: center;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: hsl(39, 100%, 56%);
+  background-color: hsl(39, 100%, 96%);
+  border-radius: 10px;
+}
+
+#box2 #boxes #memory h2 {
+  margin-left: 30px;
+  margin-right: 5px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+#box2 #boxes #memory h3 {
+  margin-left: 5px;
+  margin-right: 10px;
+  text-align: left;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(153, 153, 153);
+}
+
+#box2 #verb {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#box2 #boxes #verbal {
+  margin-bottom: 18px;
+  align-items: center;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: hsl(166, 100%, 37%);
+  background-color: hsl(164, 100%, 95%);
+  border-radius: 10px;
+}
+
+#box2 #boxes #verbal h2 {
+  margin-left: 30px;
+  margin-right: 5px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+#box2 #boxes #verbal h3 {
+  margin-left: 5px;
+  margin-right: 10px;
+  text-align: left;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(153, 153, 153);
+}
+
+#box2 #visu {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#box2 #boxes #visual {
+  margin-bottom: 18px;
+  align-items: center;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(235, 100%, 96%);
+  border-radius: 10px;
+}
+
+#box2 #boxes #visual h2 {
+  margin-left: 30px;
+  margin-right: 5px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+#box2 #boxes #visual h3 {
+  margin-left: 5px;
+  margin-right: 10px;
+  text-align: left;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(153, 153, 153);
 }
 
 button {
   background-color: hsl(224, 30%, 27%);
   border-radius: 999px;
+  border-style: none;
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
-  opacity: 1;
-  outline: 0 solid transparent;
+  display: flex;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  height: 45px;
   padding: 8px 18px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: fit-content;
-  word-break: break-word;
-  border: 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 button:hover {
@@ -113,4 +302,15 @@ button:hover {
     hsl(252, 100%, 67%),
     hsl(241, 81%, 54%)
   );
+}
+
+.attribution {
+  font-family: "Hanken Grotesk", sans-serif;
+  margin-top: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

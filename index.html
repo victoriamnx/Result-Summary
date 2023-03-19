@@ -11,17 +11,6 @@
 
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -31,8 +20,9 @@
       Your Result
     </div>
     <div id="result">
-      76 <br>
-      of 100</div>
+      <h1>76</h1>
+      <h1>of 100</h1>
+    </div>
     <div id="compliment">
       Great</div>
     <div id="text">
@@ -43,31 +33,39 @@
     <div id="title">
       Summary
     </div>
-    <div id="reaction">
-      Reaction
-      80 / 100</div>
-    <div id="reaction">
-      Memory
-      92 / 100</div>
-    <div id="reaction">
-      Verbal
-      61 / 100</div>
-    <div id="reaction">
-      Visual
-      72 / 100</div>
-
+    <div id="boxes">
+      <div id="reaction">
+        <h1><img id="react" src="assets/images/icon-reaction.svg" alt="Reaction" />Reaction</h1>
+        <h2>80</h2>
+        <h3>/ 100</h3>
+      </div>
+      <div id="memory">
+        <h1><img id="memo" src="assets/images/icon-memory.svg" alt="Memory" />Memory</h1>
+        <h2>92</h2>
+        <h3>/ 100</h3>
+      </div>
+      <div id="verbal">
+        <h1><img id="verb" src="assets/images/icon-verbal.svg" alt="Verbal" />Verbal</h1>
+        <h2>61</h2>
+        <h3>/ 100</h3>
+      </div>
+      <div id="visual">
+        <h1><img id="visu" src="assets/images/icon-visual.svg" alt="Visual" />Visual</h1>
+        <h2>72</h2>
+        <h3>/ 100</h3>
+      </div>
+    </div>
     <button>Continue</button>
   </div>
 
-  <footer>
-    <div class="attribution">
-      <span>Challenge by&nbsp;</span>
+  <div class="attribution">
+    <div id="attrib" <span>Challenge by&nbsp;</span>
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
       <span>. Coded by&nbsp;</span>
       <a href="https://github.com/victoriamnx">victoriamnx</a>
       <span>.</span>
     </div>
-  </footer>
+  </div>
 
 </body>
 
