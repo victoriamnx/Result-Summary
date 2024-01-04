@@ -118,6 +118,8 @@ main {
 }
 
 .summary h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
   color: #303b59;
 }
 
@@ -241,7 +243,7 @@ button {
   align-items: center;
   appearance: none;
   border-radius: 8rem;
-  background: var(--Dark-Navy, #2f2ce9);
+  background: var(--Dark-Navy,#303B59);
   border-width: 0;
   box-shadow: none;
   box-sizing: border-box;
