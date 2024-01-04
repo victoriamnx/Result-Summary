@@ -1,68 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/icons/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <main>
+      <div class="result">
+        <h1>Your Result</h1>
 
-<body>
-  <div class="container">
-
-    <div class="box1">
-      <div id="title">
-        Your Result
-      </div>
-      <div id="result">
-        <h1>76</h1>
-        <h1>of 100</h1>
-      </div>
-      <div id="compliments">
-        <h1>Great</h1>
-        <h1>You scored higher than 65% of <br> the people who have taken <br> these tests.</h1>
-      </div>
-    </div>
-
-    <div class="box2">
-      <div id="title">
-        Summary
-      </div>
-      <div id="boxes">
-        <div id="reaction">
-          <h1><img id="react" src="assets/images/icon-reaction.svg" alt="Reaction" />Reaction</h1>
-          <h2>80</h2>
-          <h3>/ 100</h3>
-        </div>
-        <div id="memory">
-          <h1><img id="memo" src="assets/images/icon-memory.svg" alt="Memory" />Memory</h1>
-          <h2>92</h2>
-          <h3>/ 100</h3>
-        </div>
-        <div id="verbal">
-          <h1><img id="verb" src="assets/images/icon-verbal.svg" alt="Verbal" />Verbal</h1>
-          <h2>61</h2>
-          <h3>/ 100</h3>
-        </div>
-        <div id="visual">
-          <h1><img id="visu" src="assets/images/icon-visual.svg" alt="Visual" />Visual</h1>
-          <h2>72</h2>
-          <h3>/ 100</h3>
+        <div class="pontuation">76 <span>of 100</span></div>
+        <div class="perfomance">
+          <h1>Great</h1>
+          <p>
+            Your performance exceed 65%<br />
+            of the people conducting the<br />
+            test here!
+          </p>
         </div>
       </div>
-      <button>Continue</button>
-    </div>
+      <div class="summary">
+        <h1>Summary</h1>
 
-    <div class="attribution">
-      <div id="attrib" <span>Challenge by&nbsp;</span>
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
-        <span>. Coded by&nbsp;</span>
-        <a href="https://github.com/victoriamnx">victoriamnx</a>
-        <span>.</span>
+        <div class="test-results">
+          <div class="test">
+            <div class="typeOftest">
+              <img
+                src="./assets/images/icons/icon-reaction.svg"
+                alt="Reaction Icon"
+              />
+              Reaction
+            </div>
+            <div class="testResult">
+              80 <span> <span>/ 100</span></span>
+            </div>
+          </div>
+          <div class="test">
+            <div class="typeOftest">
+              <img
+                src="./assets/images/icons/icon-memory.svg"
+                alt="Memory Icon"
+              />
+              Memory
+            </div>
+            <div class="testResult">92 <span>/ 100</span></div>
+          </div>
+          <div class="test">
+            <div class="typeOftest">
+              <img
+                src="./assets/images/icons/icon-verbal.svg"
+                alt="Verbal Icon"
+              />
+              Verbal
+            </div>
+            <div class="testResult">61 <span>/ 100</span></div>
+          </div>
+          <div class="test">
+            <div class="typeOftest">
+              <img
+                src="./assets/images/icons/icon-visual.svg"
+                alt="Visual Icon"
+              />
+              Visual
+            </div>
+            <div class="testResult">72 <span>/ 100</span></div>
+          </div>
+        </div>
+
+        <button>Continue</button>
       </div>
-    </div>
+    </main>
 
-  </div>
-</body>
+    <footer>
+      <div class="attribution">
+        <span>Challenge by&nbsp;</span
+        ><a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          title="Go to Frontend Mentor site"
+          >Frontend Mentor.
+        </a>
+        <span> Coded by&nbsp;</span
+        ><a href="https://github.com/victoriamnx" title="Go to Github profile"
+          >victoriamnx.</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
