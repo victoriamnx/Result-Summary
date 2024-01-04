@@ -7,7 +7,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 - [Frontend Mentor - Results summary component solution](#frontend-mentor---results-summary-component-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
-    - [Screenshot](#screenshot)
+    - [Result](#result)
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
@@ -17,7 +17,10 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ## Overview
 
-### Screenshot
+### Result
+
+![image](https://github.com/victoriamnx/Result-Summary/assets/96449803/4c2fd99a-d59c-4b3e-a1df-1c4d839c3d86)
+![image](https://github.com/victoriamnx/Result-Summary/assets/96449803/54976526-7296-4c13-b2a6-7b1e18dccc97)
 
 ### Links
 
